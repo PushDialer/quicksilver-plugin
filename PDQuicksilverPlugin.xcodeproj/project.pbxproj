@@ -1,0 +1,306 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D0E7174115365D0000913750 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E7174015365D0000913750 /* Cocoa.framework */; };
+		D0E7174715365D0000913750 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D0E7174515365D0000913750 /* InfoPlist.strings */; };
+		D0E7175115365D0000913750 /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = D0E7175015365D0000913750 /* Release.xcconfig */; };
+		D0E7175615365D0000913750 /* PDQuicksilverPluginAction.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E7175515365D0000913750 /* PDQuicksilverPluginAction.m */; };
+		D0E7175915365D0000913750 /* PDQuicksilverPluginSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E7175815365D0000913750 /* PDQuicksilverPluginSource.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D0E7173D15365D0000913750 /* PDQuicksilverPlugin.qsplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PDQuicksilverPlugin.qsplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0E7174015365D0000913750 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		D0E7174415365D0000913750 /* PDQuicksilverPlugin-Info.plist */ = {isa = PBXFileReference; path = "PDQuicksilverPlugin-Info.plist"; sourceTree = "<group>"; };
+		D0E7174615365D0000913750 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D0E7174915365D0000913750 /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
+		D0E7174A15365D0000913750 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		D0E7174B15365D0000913750 /* Developer.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Developer.xcconfig; sourceTree = "<group>"; };
+		D0E7174C15365D0000913750 /* QSPlugIn.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = QSPlugIn.xcconfig; sourceTree = "<group>"; };
+		D0E7174D15365D0000913750 /* QSPlugIn_Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = QSPlugIn_Debug.xcconfig; sourceTree = "<group>"; };
+		D0E7174E15365D0000913750 /* QSPlugIn_Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = QSPlugIn_Release.xcconfig; sourceTree = "<group>"; };
+		D0E7174F15365D0000913750 /* Quicksilver.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Quicksilver.pch; sourceTree = "<group>"; };
+		D0E7175015365D0000913750 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Release.xcconfig; path = /tmp/QS/Configuration; sourceTree = "<absolute>"; };
+		D0E7175215365D0000913750 /* bltrversion */ = {isa = PBXFileReference; path = bltrversion; sourceTree = "<group>"; };
+		D0E7175315365D0000913750 /* qs_fix_project.py */ = {isa = PBXFileReference; path = qs_fix_project.py; sourceTree = "<group>"; };
+		D0E7175415365D0000913750 /* PDQuicksilverPluginAction.h */ = {isa = PBXFileReference; path = PDQuicksilverPluginAction.h; sourceTree = "<group>"; };
+		D0E7175515365D0000913750 /* PDQuicksilverPluginAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDQuicksilverPluginAction.m; sourceTree = "<group>"; };
+		D0E7175715365D0000913750 /* PDQuicksilverPluginSource.h */ = {isa = PBXFileReference; path = PDQuicksilverPluginSource.h; sourceTree = "<group>"; };
+		D0E7175815365D0000913750 /* PDQuicksilverPluginSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDQuicksilverPluginSource.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0E7173915365D0000913750 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0E7174115365D0000913750 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D0E7173115365D0000913750 = {
+			isa = PBXGroup;
+			children = (
+				D0E7174215365D0000913750 /* PDQuicksilverPlugin */,
+				D0E7173F15365D0000913750 /* Frameworks */,
+				D0E7173E15365D0000913750 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D0E7173E15365D0000913750 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0E7173D15365D0000913750 /* PDQuicksilverPlugin.qsplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0E7173F15365D0000913750 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0E7174015365D0000913750 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D0E7174215365D0000913750 /* PDQuicksilverPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				D0E7175215365D0000913750 /* bltrversion */,
+				D0E7175315365D0000913750 /* qs_fix_project.py */,
+				D0E7175415365D0000913750 /* PDQuicksilverPluginAction.h */,
+				D0E7175515365D0000913750 /* PDQuicksilverPluginAction.m */,
+				D0E7175715365D0000913750 /* PDQuicksilverPluginSource.h */,
+				D0E7175815365D0000913750 /* PDQuicksilverPluginSource.m */,
+				D0E7174815365D0000913750 /* Configuration */,
+				D0E7174315365D0000913750 /* Supporting Files */,
+			);
+			path = PDQuicksilverPlugin;
+			sourceTree = "<group>";
+		};
+		D0E7174315365D0000913750 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D0E7174415365D0000913750 /* PDQuicksilverPlugin-Info.plist */,
+				D0E7174515365D0000913750 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D0E7174815365D0000913750 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				D0E7174915365D0000913750 /* Common.xcconfig */,
+				D0E7174A15365D0000913750 /* Debug.xcconfig */,
+				D0E7174B15365D0000913750 /* Developer.xcconfig */,
+				D0E7174C15365D0000913750 /* QSPlugIn.xcconfig */,
+				D0E7174D15365D0000913750 /* QSPlugIn_Debug.xcconfig */,
+				D0E7174E15365D0000913750 /* QSPlugIn_Release.xcconfig */,
+				D0E7174F15365D0000913750 /* Quicksilver.pch */,
+				D0E7175015365D0000913750 /* Release.xcconfig */,
+			);
+			name = Configuration;
+			path = ../../../../../private/tmp/QS/Configuration;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D0E7173C15365D0000913750 /* PDQuicksilverPlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0E7175C15365D0000913750 /* Build configuration list for PBXNativeTarget "PDQuicksilverPlugin" */;
+			buildPhases = (
+				D0E7173815365D0000913750 /* Sources */,
+				D0E7173915365D0000913750 /* Frameworks */,
+				D0E7173A15365D0000913750 /* Resources */,
+				D0E7173B15365D0000913750 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PDQuicksilverPlugin;
+			productName = PDQuicksilverPlugin;
+			productReference = D0E7173D15365D0000913750 /* PDQuicksilverPlugin.qsplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0E7173315365D0000913750 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Core Intellect, LLC";
+			};
+			buildConfigurationList = D0E7173615365D0000913750 /* Build configuration list for PBXProject "PDQuicksilverPlugin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D0E7173115365D0000913750;
+			productRefGroup = D0E7173E15365D0000913750 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0E7173C15365D0000913750 /* PDQuicksilverPlugin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D0E7173A15365D0000913750 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0E7174715365D0000913750 /* InfoPlist.strings in Resources */,
+				D0E7175115365D0000913750 /* Release.xcconfig in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D0E7173B15365D0000913750 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT/PDQuicksilverPlugin/bltrversion\" \"$INFOPLIST_FILE\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0E7173815365D0000913750 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0E7175615365D0000913750 /* PDQuicksilverPluginAction.m in Sources */,
+				D0E7175915365D0000913750 /* PDQuicksilverPluginSource.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D0E7174515365D0000913750 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0E7174615365D0000913750 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D0E7175A15365D0000913750 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D0E7175B15365D0000913750 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D0E7175D15365D0000913750 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PDQuicksilverPlugin/PDQuicksilverPlugin-Prefix.pch";
+				INFOPLIST_FILE = "PDQuicksilverPlugin/PDQuicksilverPlugin-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = qsplugin;
+			};
+			name = Debug;
+		};
+		D0E7175E15365D0000913750 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PDQuicksilverPlugin/PDQuicksilverPlugin-Prefix.pch";
+				INFOPLIST_FILE = "PDQuicksilverPlugin/PDQuicksilverPlugin-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = qsplugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D0E7173615365D0000913750 /* Build configuration list for PBXProject "PDQuicksilverPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0E7175A15365D0000913750 /* Debug */,
+				D0E7175B15365D0000913750 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0E7175C15365D0000913750 /* Build configuration list for PBXNativeTarget "PDQuicksilverPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0E7175D15365D0000913750 /* Debug */,
+				D0E7175E15365D0000913750 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D0E7173315365D0000913750 /* Project object */;
+}
