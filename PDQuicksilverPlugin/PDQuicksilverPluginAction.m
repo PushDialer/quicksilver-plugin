@@ -9,7 +9,7 @@
 
 @implementation QSPDQuicksilverPluginActionProvider
 
-- (QSObject *)performActionOnObject:(QSObject *)dObject
+- (QSObject *)dialNumber:(QSObject *)dObject
 {
   
   NSString *theNumber = [dObject objectForType:QSContactPhoneType];

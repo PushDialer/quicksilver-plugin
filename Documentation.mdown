@@ -1,0 +1,7 @@
+# PushDialer #
+
+This plug-in allows you to select a phone number in Quicksilver and call it with your iPhone using [PushDialer][pd].
+
+It adds a single action called "Dial Number on iPhone". Select a phone number by calling up one of your contacts and hitting `→` or `/`.
+
+[pd]: http://pushdialer.com/
