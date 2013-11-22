@@ -7,22 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D054AABB15365E030054C400 /* QSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D054AAB715365E030054C400 /* QSCore.framework */; };
-		D054AABC15365E030054C400 /* QSEffects.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D054AAB815365E030054C400 /* QSEffects.framework */; };
-		D054AABD15365E030054C400 /* QSFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D054AAB915365E030054C400 /* QSFoundation.framework */; };
-		D054AABE15365E030054C400 /* QSInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D054AABA15365E030054C400 /* QSInterface.framework */; };
 		D054AAC115365FCF0054C400 /* PushDialer.icns in Resources */ = {isa = PBXBuildFile; fileRef = D054AAC015365FCF0054C400 /* PushDialer.icns */; };
 		D0E7174115365D0000913750 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E7174015365D0000913750 /* Cocoa.framework */; };
 		D0E7174715365D0000913750 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D0E7174515365D0000913750 /* InfoPlist.strings */; };
 		D0E7175615365D0000913750 /* PDQuicksilverPluginAction.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E7175515365D0000913750 /* PDQuicksilverPluginAction.m */; };
-		D0E7175915365D0000913750 /* PDQuicksilverPluginSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E7175815365D0000913750 /* PDQuicksilverPluginSource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D054AAB715365E030054C400 /* QSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QSCore.framework; path = /Applications/Quicksilver.app/Contents/Frameworks/QSCore.framework; sourceTree = "<absolute>"; };
-		D054AAB815365E030054C400 /* QSEffects.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QSEffects.framework; path = /Applications/Quicksilver.app/Contents/Frameworks/QSEffects.framework; sourceTree = "<absolute>"; };
-		D054AAB915365E030054C400 /* QSFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QSFoundation.framework; path = /Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework; sourceTree = "<absolute>"; };
-		D054AABA15365E030054C400 /* QSInterface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QSInterface.framework; path = /Applications/Quicksilver.app/Contents/Frameworks/QSInterface.framework; sourceTree = "<absolute>"; };
 		D054AAC015365FCF0054C400 /* PushDialer.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = PushDialer.icns; sourceTree = "<group>"; };
 		D0E7173D15365D0000913750 /* PDQuicksilverPlugin.qsplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PDQuicksilverPlugin.qsplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0E7174015365D0000913750 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -32,14 +23,10 @@
 		D0E7174A15365D0000913750 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		D0E7174B15365D0000913750 /* Developer.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Developer.xcconfig; sourceTree = "<group>"; };
 		D0E7174C15365D0000913750 /* QSPlugIn.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = QSPlugIn.xcconfig; sourceTree = "<group>"; };
-		D0E7174D15365D0000913750 /* QSPlugIn_Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = QSPlugIn_Debug.xcconfig; sourceTree = "<group>"; };
-		D0E7174E15365D0000913750 /* QSPlugIn_Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = QSPlugIn_Release.xcconfig; sourceTree = "<group>"; };
 		D0E7174F15365D0000913750 /* Quicksilver.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Quicksilver.pch; sourceTree = "<group>"; };
 		D0E7175015365D0000913750 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		D0E7175415365D0000913750 /* PDQuicksilverPluginAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDQuicksilverPluginAction.h; sourceTree = "<group>"; };
 		D0E7175515365D0000913750 /* PDQuicksilverPluginAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDQuicksilverPluginAction.m; sourceTree = "<group>"; };
-		D0E7175715365D0000913750 /* PDQuicksilverPluginSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDQuicksilverPluginSource.h; sourceTree = "<group>"; };
-		D0E7175815365D0000913750 /* PDQuicksilverPluginSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDQuicksilverPluginSource.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,10 +34,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D054AABB15365E030054C400 /* QSCore.framework in Frameworks */,
-				D054AABC15365E030054C400 /* QSEffects.framework in Frameworks */,
-				D054AABD15365E030054C400 /* QSFoundation.framework in Frameworks */,
-				D054AABE15365E030054C400 /* QSInterface.framework in Frameworks */,
 				D0E7174115365D0000913750 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,10 +62,6 @@
 			isa = PBXGroup;
 			children = (
 				D0E7174015365D0000913750 /* Cocoa.framework */,
-				D054AAB715365E030054C400 /* QSCore.framework */,
-				D054AAB815365E030054C400 /* QSEffects.framework */,
-				D054AAB915365E030054C400 /* QSFoundation.framework */,
-				D054AABA15365E030054C400 /* QSInterface.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -92,8 +71,6 @@
 			children = (
 				D0E7175415365D0000913750 /* PDQuicksilverPluginAction.h */,
 				D0E7175515365D0000913750 /* PDQuicksilverPluginAction.m */,
-				D0E7175715365D0000913750 /* PDQuicksilverPluginSource.h */,
-				D0E7175815365D0000913750 /* PDQuicksilverPluginSource.m */,
 				D0E7174815365D0000913750 /* Configuration */,
 				D0E7174315365D0000913750 /* Supporting Files */,
 			);
@@ -117,14 +94,12 @@
 				D0E7174A15365D0000913750 /* Debug.xcconfig */,
 				D0E7174B15365D0000913750 /* Developer.xcconfig */,
 				D0E7174C15365D0000913750 /* QSPlugIn.xcconfig */,
-				D0E7174D15365D0000913750 /* QSPlugIn_Debug.xcconfig */,
-				D0E7174E15365D0000913750 /* QSPlugIn_Release.xcconfig */,
 				D0E7174F15365D0000913750 /* Quicksilver.pch */,
 				D0E7175015365D0000913750 /* Release.xcconfig */,
 			);
 			name = Configuration;
 			path = /tmp/QS/Configuration;
-			sourceTree = "<group>";
+			sourceTree = "<absolute>";
 		};
 /* End PBXGroup section */
 
@@ -133,10 +108,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D0E7175C15365D0000913750 /* Build configuration list for PBXNativeTarget "PDQuicksilverPlugin" */;
 			buildPhases = (
+				D0E7173B15365D0000913750 /* Update Documentation and Version */,
 				D0E7173815365D0000913750 /* Sources */,
 				D0E7173915365D0000913750 /* Frameworks */,
 				D0E7173A15365D0000913750 /* Resources */,
-				D0E7173B15365D0000913750 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -186,18 +161,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		D0E7173B15365D0000913750 /* ShellScript */ = {
+		D0E7173B15365D0000913750 /* Update Documentation and Version */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Update Documentation and Version";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
-			shellScript = "\"$SRCROOT/PDQuicksilverPlugin/bltrversion\" \"$INFOPLIST_FILE\"";
+			shellScript = "\"$QS_BUILD_ROOT/Tools/bltrversion\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -207,7 +183,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0E7175615365D0000913750 /* PDQuicksilverPluginAction.m in Sources */,
-				D0E7175915365D0000913750 /* PDQuicksilverPluginSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,7 +204,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0E7174A15365D0000913750 /* Debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 			};
 			name = Debug;
 		};
@@ -237,7 +211,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0E7175015365D0000913750 /* Release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 			};
 			name = Release;
 		};
@@ -245,10 +218,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0E7174C15365D0000913750 /* QSPlugIn.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SYSTEM_APPS_DIR)/Quicksilver.app/Contents/Frameworks\"",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -257,10 +226,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0E7174C15365D0000913750 /* QSPlugIn.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SYSTEM_APPS_DIR)/Quicksilver.app/Contents/Frameworks\"",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

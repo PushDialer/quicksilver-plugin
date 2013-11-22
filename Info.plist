@@ -4,6 +4,8 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
+	<key>CFBundleDisplayName</key>
+	<string>PushDialer</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFile</key>
@@ -13,23 +15,23 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>PushDialer</string>
+	<string>PushDialer Plugin</string>
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>1.0.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>5</string>
 	<key>QSActions</key>
 	<dict>
-		<key>PDQuicksilverPluginExampleAction</key>
+		<key>PDQuicksilverDialAction</key>
 		<dict>
 			<key>actionClass</key>
 			<string>QSPDQuicksilverPluginActionProvider</string>
 			<key>actionSelector</key>
-			<string>performActionOnObject:</string>
+			<string>dialNumber:</string>
 			<key>directTypes</key>
 			<array>
 				<string>qs.contact.phone</string>
@@ -37,7 +39,7 @@
 			<key>icon</key>
 			<string>PushDialer</string>
 			<key>name</key>
-			<string>Dial Number on iPhone</string>
+			<string>Call (PushDialer)</string>
 		</dict>
 	</dict>
 	<key>QSPlugIn</key>
@@ -49,34 +51,18 @@
 			<string>Contacts</string>
 		</array>
 		<key>description</key>
-		<string>Allows you to dial contact phone numbers on your iPhone using PushDialer.</string>
+		<string>Allows you to dial contact phone numbers on your iPhone using PushDialer</string>
+		<key>extendedDescription</key>
+		<string>&lt;h1&gt;PushDialer&lt;/h1&gt;
+&lt;p&gt;This plug-in allows you to select a phone number in Quicksilver and call it with your iPhone using &lt;a href="http://pushdialer.com/"&gt;PushDialer&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It adds a single action named "Call (PushDialer)". Select a phone number by calling up one of your contacts and hitting &lt;code&gt;→&lt;/code&gt; or &lt;code&gt;/&lt;/code&gt;.&lt;/p&gt;</string>
 		<key>icon</key>
 		<string>PushDialer</string>
+		<key>relatedBundles</key>
+		<array>
+			<string>com.pushdialer.desktop.URLHandler</string>
+		</array>
 	</dict>
-	<key>QSPresetAdditionsTemplate</key>
-	<array>
-		<dict>
-			<key>ID</key>
-			<string>QSPresetPDQuicksilverPluginGroup</string>
-			<key>children</key>
-			<array>
-				<dict>
-					<key>ID</key>
-					<string>QSPresetPDQuicksilverPluginExample</string>
-					<key>name</key>
-					<string>Items from PDQuicksilverPlugin</string>
-					<key>source</key>
-					<string>QSPDQuicksilverPluginSource</string>
-				</dict>
-			</array>
-			<key>icon</key>
-			<string>KEXT</string>
-			<key>name</key>
-			<string>PDQuicksilverPlugin Presets</string>
-			<key>source</key>
-			<string>QSGroupObjectSource</string>
-		</dict>
-	</array>
 	<key>QSRegistration</key>
 	<dict>
 		<key>QSActionProviders</key>
@@ -84,157 +70,22 @@
 			<key>QSPDQuicksilverPluginActionProvider</key>
 			<string>QSPDQuicksilverPluginActionProvider</string>
 		</dict>
-		<key>QSApplicationActionsTemplate</key>
-		<dict>
-			<key>com.domain.application</key>
-			<dict>
-				<key>PDQuicksilverPluginExampleCommand</key>
-				<dict>
-					<key>actionClass</key>
-					<string>QSPDQuicksilverPluginActionProvider</string>
-					<key>command</key>
-					<string>PDQuicksilverPluginExampleCommand</string>
-					<key>name</key>
-					<string>Application Action Example</string>
-				</dict>
-			</dict>
-		</dict>
-		<key>QSBundleChildHandlers</key>
-		<dict>
-			<key>QSPDQuicksilverPluginType</key>
-			<string>QSPDQuicksilverPluginSource</string>
-		</dict>
-		<key>QSBundleChildHandlersTemplate</key>
-		<dict>
-			<key>com.domain.application</key>
-			<string>QSPDQuicksilverPluginSource</string>
-		</dict>
-		<key>QSCommandsTemplate</key>
-		<dict>
-			<key>PDQuicksilverPluginExampleCommand</key>
-			<dict>
-				<key>command</key>
-				<dict>
-					<key>actionID</key>
-					<string>QSObjCSendMessageAction</string>
-					<key>directArchive</key>
-					<dict>
-						<key>data</key>
-						<dict>
-							<key>qs.action</key>
-							<dict>
-								<key>actionClass</key>
-								<string>QSPDQuicksilverPluginActionProvider</string>
-								<key>actionSelector</key>
-								<string>someSelector</string>
-								<key>icon</key>
-								<string>defaultAction</string>
-								<key>name</key>
-								<string>Do Something</string>
-							</dict>
-						</dict>
-					</dict>
-					<key>directID</key>
-					<string>PDQuicksilverPluginInternalCommand</string>
-				</dict>
-			</dict>
-		</dict>
-		<key>QSObjectHandlers</key>
-		<dict>
-			<key>QSPDQuicksilverPluginType</key>
-			<string>QSPDQuicksilverPluginSource</string>
-		</dict>
-		<key>QSObjectSources</key>
-		<dict>
-			<key>QSPDQuicksilverPluginSource</key>
-			<string>QSPDQuicksilverPluginSource</string>
-		</dict>
-		<key>QSPreferencePanesTemplate</key>
-		<dict>
-			<key>PDQuicksilverPluginPrefPaneTemplate</key>
-			<dict>
-				<key>class</key>
-				<string>PDQuicksilverPluginPrefPane</string>
-				<key>description</key>
-				<string>Preferences</string>
-				<key>icon</key>
-				<string>KEXT</string>
-				<key>name</key>
-				<string>PDQuicksilverPlugin</string>
-			</dict>
-		</dict>
-		<key>QSProxiesTemplate</key>
-		<dict>
-			<key>PDQuicksilverPluginSomeProxy</key>
-			<dict>
-				<key>icon</key>
-				<string>GenericDocumentIcon</string>
-				<key>name</key>
-				<string>PDQuicksilverPlugin Proxy</string>
-				<key>providerClass</key>
-				<string>QSPDQuicksilverPluginSource</string>
-				<key>types</key>
-				<array>
-					<string>QSPDQuicksilverPluginType</string>
-				</array>
-			</dict>
-		</dict>
-		<key>QSTriggerEventsTemplate</key>
-		<dict>
-			<key>PDQuicksilverPluginSomeEvent</key>
-			<dict>
-				<key>icon</key>
-				<string>KEXT</string>
-				<key>name</key>
-				<string>Do something in response to this event</string>
-				<key>provider</key>
-				<string>QSPDQuicksilverPluginSource</string>
-			</dict>
-		</dict>
-		<key>QSTriggerSetsTemplates</key>
-		<dict>
-			<key>PDQuicksilverPluginTriggers</key>
-			<dict>
-				<key>icon</key>
-				<string>KEXT</string>
-				<key>name</key>
-				<string>PDQuicksilverPlugin</string>
-			</dict>
-		</dict>
-		<key>QSTypeDefinitions</key>
-		<dict>
-			<key>QSPDQuicksilverPluginType</key>
-			<dict>
-				<key>icon</key>
-				<string>GenericDocumentIcon</string>
-				<key>name</key>
-				<string>PDQuicksilverPlugin Object</string>
-			</dict>
-		</dict>
 	</dict>
-	<key>QSTriggerAdditionsTemplate</key>
-	<array>
-		<dict>
-			<key>ID</key>
-			<string>PDQuicksilverPluginTrigger</string>
-			<key>command</key>
-			<string>PDQuicksilverPluginExampleCommand</string>
-			<key>defaults</key>
+	<key>QSRequirements</key>
+	<dict>
+		<key>bundle</key>
+		<array>
 			<dict>
-				<key>characters</key>
-				<string>x</string>
-				<key>keyCode</key>
-				<integer>124</integer>
-				<key>modifiers</key>
-				<integer>9961768</integer>
-				<key>type</key>
-				<string>QSHotKeyTrigger</string>
+				<key>id</key>
+				<string>com.pushdialer.desktop.URLHandler</string>
+				<key>name</key>
+				<string>PushDialer</string>
+				<key>version</key>
+				<string>1.0</string>
 			</dict>
-			<key>name</key>
-			<string>Example Trigger</string>
-			<key>set</key>
-			<string>PDQuicksilverPlugin</string>
-		</dict>
-	</array>
+		</array>
+		<key>version</key>
+		<string>4001</string>
+	</dict>
 </dict>
 </plist>
