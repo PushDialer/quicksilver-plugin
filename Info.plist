@@ -23,7 +23,7 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>4</string>
+	<string>5</string>
 	<key>QSActions</key>
 	<dict>
 		<key>PDQuicksilverDialAction</key>
@@ -55,7 +55,7 @@
 		<key>extendedDescription</key>
 		<string>&lt;h1&gt;PushDialer&lt;/h1&gt;
 &lt;p&gt;This plug-in allows you to select a phone number in Quicksilver and call it with your iPhone using &lt;a href="http://pushdialer.com/"&gt;PushDialer&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;It adds a single action called "Dial Number on iPhone". Select a phone number by calling up one of your contacts and hitting &lt;code&gt;→&lt;/code&gt; or &lt;code&gt;/&lt;/code&gt;.&lt;/p&gt;</string>
+&lt;p&gt;It adds a single action named "Call (PushDialer)". Select a phone number by calling up one of your contacts and hitting &lt;code&gt;→&lt;/code&gt; or &lt;code&gt;/&lt;/code&gt;.&lt;/p&gt;</string>
 		<key>icon</key>
 		<string>PushDialer</string>
 		<key>relatedBundles</key>
