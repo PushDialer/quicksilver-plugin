@@ -39,7 +39,7 @@
 			<key>icon</key>
 			<string>PushDialer</string>
 			<key>name</key>
-			<string>Dial Number on iPhone</string>
+			<string>Call (PushDialer)</string>
 		</dict>
 	</dict>
 	<key>QSPlugIn</key>
